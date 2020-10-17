@@ -1,43 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Song Finder</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"/>
-</head>
-<body style="background:url('../../img/2.png');">
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    />
+  </head>
+  <body style="background: url('../../img/2.png')">
+    <a
+      href="https://donanana.github.io/demo/"
+      style="
+        text-decoration: none;
+        color: aliceblue;
+        font-size: 30px;
+        position: relative;
+        left: 60px;
+        top: 50px;
+        font-family: Bradley Hand, cursive;
+      "
+    >
+      <i class="fas fa-home" style="font-size: 22px"></i>
+      Home
+    </a>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
     <div class="row align-items-center justify-content-center">
-        <div class="text-center">
-
-
-          <div class="containerTwo">            
-            <div class="flex">        
-                <form class="flex" id="submit">          
-                    <input type="text" id="search" placeholder="Search for songs or keywords" />         
-                    <button class="search-btn" type="submit">           
-                        <i class="fas fa-search"></i>          
-                    </button>        
-                </form>        
-        </div>      
-            <div id="result-heading"></div>      
-            <div id="hits" class="hits"></div>
-            <div id="single-song"></div> 
-        </div>    
-          
-
-
-
+      <div class="text-center">
+        <div class="containerTwo">
+          <div class="flex">
+            <form class="flex" id="submit">
+              <input
+                type="text"
+                id="search"
+                placeholder="Search for songs or keywords"
+              />
+              <button class="search-btn" type="submit">
+                <i class="fas fa-search"></i>
+              </button>
+            </form>
           </div>
-          <div id="demo" class="invisible"></div>
+          <div id="result-heading"></div>
+          <div id="hits" class="hits"></div>
+          <div id="single-song"></div>
+        </div>
       </div>
-
-</body>
-    <script src="script.js"></script> 
+      <div id="demo" class="invisible"></div>
+    </div>
+  </body>
+  <script src="script.js"></script>
 </html>
