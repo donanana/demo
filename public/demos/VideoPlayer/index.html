@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Video Player</title>
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+/>
+  <link rel="stylesheet" href="css/progress.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body style="background: url(../../img/4.png)">
+    <a
+    href="https://donanana.github.io/demo/"
+    style="
+      text-decoration: none;
+      color: rgb(5, 5, 5);
+      font-size: 30px;
+      position: relative;
+      left: 60px;
+      top: 50px;
+      font-family: Bradley Hand, cursive;
+    "
+  >
+    <i class="fas fa-home" style="font-size: 22px"></i>
+    Home
+  </a>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+
+    <video
+    src="videos/gone.mp4"
+    id="video"
+    class="screen"
+    poster="img/poster.png"
+  ></video>
+  <div class="controls">
+    <button class="btn" id="play">
+      <i class="fa fa-play fa-2x"></i>
+    </button>
+    <button class="btn" id="stop">
+      <i class="fa fa-stop fa-2x"></i>
+    </button>
+    <input
+      type="range"
+      id="progress"
+      class="progress"
+      min="0"
+      max="100"
+      step="0.1"
+      value="0"
+    />
+    <span class="timestamp" id="timestamp">00:00</span>
+  </div>
+      </body>
+      <script src="script.js"></script>
+    </html>
+  </body>
+</html>

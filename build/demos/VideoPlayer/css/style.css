@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css?family=Questrial&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  /* font-family: "Questrial", sans-serif;
+  background-color: #666;
+  display: flex; */
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-height: 100vh;
+  margin: 0;
+}
+
+.screen {
+  cursor: pointer; /*改變滑鼠游標的形狀*/
+  background-color: rgb(151, 199, 231) !important;
+  margin: 0 auto;
+  display: flex;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  width: 600px;
+}
+
+.controls {
+  background: rgba(235, 208, 120, 0.87);
+  color: #fff;
+  width: 600px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  margin: 0 auto;
+}
+
+.controls .btn {
+  border: 0;
+  background: transparent; /*背景透明*/
+  cursor: pointer;
+}
+
+.controls .fa-play {
+  color: #86c8aa;
+}
+
+.controls .fa-stop {
+  color: #e76774;
+}
+
+.controls .fa-pause {
+  color: #fff;
+}
+
+.controls .timestamp {
+  color: #fff;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+.btn:focus {
+  outline: 0; /*點著的時候會有藍色框 這可以去除*/
+}
+
+@media (max-width: 800px) {
+  .screen,
+  .controls {
+    width: 90%; /*希望縮小時不會太小，原本是60%*/
+  }
+}

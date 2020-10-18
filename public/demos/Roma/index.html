@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Roma</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body style="background: url(../../img/6.png)">
+    <a
+    href="https://donanana.github.io/demo/"
+    style="
+      text-decoration: none;
+      color: aliceblue;
+      font-size: 30px;
+      position: relative;
+      left: 60px;
+      top: 50px;
+      font-family: Bradley Hand, cursive;
+    "
+  >
+    <i class="fas fa-home" style="font-size: 22px"></i>
+    Home
+  </a>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+        <div class="container">
+          <div class="score-container">
+            <span class="user">YOU</span>
+            <span id="score"></span>
+            <span class="com">COM</span>
+          </div>
+          <div class="buttons">
+            <button
+              id="paper"
+              class="bn"
+              onclick="game(this.value)"
+              value="paper"
+            >
+              <i class="far fa-hand-paper"></i>
+            </button>
+            <button
+              id="rock"
+              class="bn"
+              onclick="game(this.value)"
+              value="rock"
+            >
+              <i class="far fa-hand-rock"></i>
+            </button>
+            <button
+              id="scissors"
+              class="bn"
+              onclick="game(this.value)"
+              value="scissors"
+            >
+              <i class="far fa-hand-scissors"></i>
+            </button>
+          </div>
+          <div id="challenge">
+            <div id="you">
+              <div id="YourObject"></div>
+              <div class="who">You</div>
+            </div>
+            <div id="result">
+              <p id="who"></p>
+              <p></p>
+            </div>
+            <div id="com">
+              <div id="ComObject"></div>
+              <div class="who">Computer</div>
+            </div>
+          </div>
+        </div>
+      </body>
+      <script src="script.js"></script>
+    </html>
+  </body>
+</html>
