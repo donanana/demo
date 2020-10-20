@@ -111,7 +111,7 @@
   .board.circle .cell:not(.x):not(.circle):hover::after {
 	width: calc(var(--mark-size) * .7);
 	height: calc(var(--mark-size) * .7);
-	background-color: #BB7948;
+	background-color: #ce9b74;
   }
   
   .winning-message {
